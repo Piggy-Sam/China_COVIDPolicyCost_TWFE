@@ -1,0 +1,44 @@
+==============================================================================
+     TWFE Panel Regression Results with Urbanisation Interaction Term
+==============================================================================
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                log_GRP   R-squared:                        0.0841
+Estimator:                   PanelOLS   R-squared (Between):             -0.0131
+No. Observations:                 372   R-squared (Within):               0.0075
+Date:                Wed, Sep 24 2025   R-squared (Overall):             -0.0131
+Time:                        21:43:59   Log-likelihood                    573.40
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      10.008
+Entities:                          31   P-value                           0.0000
+Avg Obs:                       12.000   Distribution:                   F(3,327)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             9.6032
+                                        P-value                           0.0000
+Time periods:                      12   Distribution:                   F(3,327)
+Avg Obs:                       31.000                                           
+Min Obs:                       31.000                                           
+Max Obs:                       31.000                                           
+                                                                                
+                                 Parameter Estimates                                  
+======================================================================================
+                    Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+--------------------------------------------------------------------------------------
+Stringency_Index       0.0009     0.0014     0.7003     0.4843     -0.0017      0.0036
+Stringency_x_Urban -2.518e-05  1.799e-05    -1.3995     0.1626  -6.058e-05   1.022e-05
+Covid_Cases           -83.691     44.245    -1.8915     0.0594     -170.73      3.3500
+======================================================================================
+
+F-test for Poolability: 2271.4
+P-value: 0.0000
+Distribution: F(41,327)
+
+Included effects: Entity, Time
+==============================================================================
+
+Interpretation of Key Coefficients:
+
+Baseline Effect (Stringency_Index): 0.000946 (p-value: 0.4843)
+Interaction Effect (Stringency_x_Urban): -0.000025 (p-value: 0.1626)
+
+The interaction term is not statistically significant at conventional levels.

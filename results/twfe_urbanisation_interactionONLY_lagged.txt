@@ -1,0 +1,43 @@
+==============================================================================
+     TWFE Results with Lagged Terms and Urbanisation Interaction
+==============================================================================
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                log_GRP   R-squared:                        0.0855
+Estimator:                   PanelOLS   R-squared (Between):             -0.0129
+No. Observations:                 372   R-squared (Within):               0.0115
+Date:                Wed, Sep 24 2025   R-squared (Overall):             -0.0128
+Time:                        21:44:36   Log-likelihood                    573.68
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      5.0475
+Entities:                          31   P-value                           0.0001
+Avg Obs:                       12.000   Distribution:                   F(6,324)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             5.7614
+                                        P-value                           0.0000
+Time periods:                      12   Distribution:                   F(6,324)
+Avg Obs:                       31.000                                           
+Min Obs:                       31.000                                           
+Max Obs:                       31.000                                           
+                                                                                
+                                   Parameter Estimates                                   
+=========================================================================================
+                       Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+-----------------------------------------------------------------------------------------
+Stringency_Index          0.0012     0.0016     0.7584     0.4487     -0.0019      0.0044
+Stringency_Index_L1      -0.0005     0.0014    -0.3442     0.7309     -0.0033      0.0023
+Stringency_x_Urban    -2.937e-05  2.131e-05    -1.3784     0.1690   -7.13e-05   1.255e-05
+Stringency_L1_x_Urban  7.621e-06   1.29e-05     0.5906     0.5552  -1.777e-05   3.301e-05
+Covid_Cases              -83.149     44.591    -1.8647     0.0631     -170.87      4.5746
+Covid_Cases_L1            9.1697     19.939     0.4599     0.6459     -30.056      48.395
+=========================================================================================
+
+F-test for Poolability: 2229.0
+P-value: 0.0000
+Distribution: F(41,324)
+
+Included effects: Entity, Time
+==============================================================================
+
+
+

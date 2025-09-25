@@ -1,0 +1,43 @@
+==============================================================================
+       Two-Way Fixed Effects (TWFE) Panel Regression Results
+==============================================================================
+Dependent Variable: log(GRP)
+Number of Provinces: 31
+Total Observations: 372
+------------------------------------------------------------------------------
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                log_GRP   R-squared:                        0.0822
+Estimator:                   PanelOLS   R-squared (Between):             -0.0133
+No. Observations:                 372   R-squared (Within):               0.0064
+Date:                Wed, Sep 24 2025   R-squared (Overall):             -0.0133
+Time:                        21:41:54   Log-likelihood                    573.01
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      14.680
+Entities:                          31   P-value                           0.0000
+Avg Obs:                       12.000   Distribution:                   F(2,328)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             4.4301
+                                        P-value                           0.0126
+Time periods:                      12   Distribution:                   F(2,328)
+Avg Obs:                       31.000                                           
+Min Obs:                       31.000                                           
+Max Obs:                       31.000                                           
+                                                                                
+                                Parameter Estimates                                 
+====================================================================================
+                  Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+------------------------------------------------------------------------------------
+Stringency_Index    -0.0007     0.0005    -1.6425     0.1014     -0.0016      0.0001
+Covid_Cases         -85.536     42.272    -2.0235     0.0438     -168.69     -2.3784
+====================================================================================
+
+F-test for Poolability: 2721.9
+P-value: 0.0000
+Distribution: F(41,328)
+
+Included effects: Entity, Time
+==============================================================================
+
+Interpretation of the Key Coefficient (Stringency_Index):
+A one-unit increase in the Stringency Index is associated with a -0.0747% change in quarterly GRP, holding COVID cases and fixed effects constant.

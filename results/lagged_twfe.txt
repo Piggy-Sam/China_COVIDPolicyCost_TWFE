@@ -1,0 +1,50 @@
+==============================================================================
+     TWFE Panel Regression Results with Lagged Independent Variables
+==============================================================================
+Dependent Variable: log(GRP)
+Number of Provinces: 31
+Total Observations: 372
+------------------------------------------------------------------------------
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:                log_GRP   R-squared:                        0.0829
+Estimator:                   PanelOLS   R-squared (Between):             -0.0129
+No. Observations:                 372   R-squared (Within):               0.0126
+Date:                Wed, Sep 24 2025   R-squared (Overall):             -0.0129
+Time:                        21:42:45   Log-likelihood                    573.16
+Cov. Estimator:             Clustered                                           
+                                        F-statistic:                      7.3688
+Entities:                          31   P-value                           0.0000
+Avg Obs:                       12.000   Distribution:                   F(4,326)
+Min Obs:                       12.000                                           
+Max Obs:                       12.000   F-statistic (robust):             2.2769
+                                        P-value                           0.0608
+Time periods:                      12   Distribution:                   F(4,326)
+Avg Obs:                       31.000                                           
+Min Obs:                       31.000                                           
+Max Obs:                       31.000                                           
+                                                                                
+                                  Parameter Estimates                                  
+=======================================================================================
+                     Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+---------------------------------------------------------------------------------------
+Stringency_Index       -0.0008     0.0004    -1.7405     0.0827     -0.0016   9.816e-05
+Stringency_Index_L1  2.976e-05     0.0008     0.0358     0.9715     -0.0016      0.0017
+Covid_Cases            -85.079     42.601    -1.9971     0.0466     -168.89     -1.2717
+Covid_Cases_L1          9.9839     18.997     0.5255     0.5996     -27.389      47.357
+=======================================================================================
+
+F-test for Poolability: 2682.8
+P-value: 0.0000
+Distribution: F(41,326)
+
+Included effects: Entity, Time
+==============================================================================
+
+Interpretation:
+
+Contemporaneous Effect (t):
+The coefficient for Stringency_Index in the current quarter is -0.00075 (p-value: 0.0827).
+
+Lagged Effect (t-1):
+The coefficient for Stringency_Index in the previous quarter is 0.00003 (p-value: 0.9715).
